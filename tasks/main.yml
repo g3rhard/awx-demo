@@ -1,5 +1,11 @@
 ---
 # tasks file for roleawx
-  - name: Test Message
-    debug:
-      msg: "AWX and Ansible"
+- name: AWX DEMO
+  hosts: all
+  tasks:
+    - name: Test Message
+      debug:
+        msg: "AWX and Ansible"
+    - name: Print var
+      debug:
+        msg: "{{ awxinvvar }}"
