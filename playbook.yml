@@ -1,11 +1,6 @@
 ---
-- name: Run roles
+- name: Run all test roles
   hosts: all
-  gather_facts: no
-  tasks:
-
-  - name: Run all test roles
-    hosts: all
-    become: yes
-    roles:
-    - role: test
+  become: yes
+  roles:
+  - role: test
