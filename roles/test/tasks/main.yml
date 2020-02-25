@@ -1,12 +1,7 @@
 ---
-- name: AWX DEMO
-  hosts: all
-  gather_facts: no
-  tasks:
-
-    - name: Show Message
-      debug:
-        msg: "AWX and Ansible"
-    - name: Show var
-      debug:
-        msg: "{{ awxinvvar }}"
+- name: Show Message
+  debug:
+    msg: "AWX and Ansible"
+- name: Show var
+  debug:
+    msg: "{{ awxinvvar }}"
