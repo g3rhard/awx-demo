@@ -1,0 +1,5 @@
+---
+- name: AWX DEMO
+  hosts: all
+  gather_facts: no
+  tasks:
