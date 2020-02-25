@@ -1,0 +1,8 @@
+- name: Show message
+  hosts: all
+  gather_facts: no
+  tasks:
+
+    - name: Show Message
+      debug:
+        msg: "AWX and Ansible"

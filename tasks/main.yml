@@ -1,8 +1,9 @@
 ---
-# tasks file for roleawx
 - name: AWX DEMO
   hosts: all
+  gather_facts: no
   tasks:
+
     - name: Test Message
       debug:
         msg: "AWX and Ansible"

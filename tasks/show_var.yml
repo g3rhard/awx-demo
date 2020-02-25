@@ -1,0 +1,8 @@
+- name: Show var
+  hosts: all
+  gather_facts: no
+  tasks:
+
+    - name: Show var
+      debug:
+        msg: "{{ awxinvvar }}"
